@@ -1,12 +1,12 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 
 interface Props {
   operation: string;
-  mathChangeEvent: (value: number) => void;
+  mathChangeEvent: MouseEventHandler<HTMLButtonElement>;
 }
 
 const ButtonOperation: React.FC<Props> = ({ operation, mathChangeEvent }) => {
-  return <button onClick={() => mathChangeEvent}>{operation}</button>;
+  return <button onClick={mathChangeEvent}>{operation}</button>;
 };
 
 export default ButtonOperation;
