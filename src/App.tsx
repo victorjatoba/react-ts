@@ -2,6 +2,7 @@ import "./styles.css";
 import NameField from "./NameField";
 import { useState } from "react";
 import ButtonOperation from "./ButtonOperation";
+import Room from "./components/Room";
 
 export default function App() {
   const victorJatoba = {
@@ -29,7 +30,9 @@ export default function App() {
           mathChangeEvent={() => setPoints(points + 1)}
         />
       </div>
-      <button onClick={() => setPoints(points - 1)} />
+      <div>
+        <Room />
+      </div>
     </div>
   );
 }
