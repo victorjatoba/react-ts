@@ -3,6 +3,7 @@ import NameField from "./NameField";
 import { useState } from "react";
 import ButtonOperation from "./ButtonOperation";
 import Room from "./components/Room";
+import CapsLock from "./components/CapsLock";
 
 export default function App() {
   const victorJatoba = {
@@ -32,6 +33,9 @@ export default function App() {
       </div>
       <div>
         <Room />
+      </div>
+      <div>
+        <CapsLock textValue="victor" />
       </div>
     </div>
   );
